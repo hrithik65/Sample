@@ -1,0 +1,34 @@
+SUM OF n TERMS
+n=input("Enter the end number: ")
+sums=0
+sums_new=0
+arr=[]
+for x in range(int(n)):
+    sums=sums+x+1
+print("Required sum is ",sums)
+for x in range(int(n)):
+    inp=input("Enter element ")
+    arr.append(inp)
+    sums_new=sums_new+int(inp)
+if (sums-sums_new==0):
+    print("No missing Term")
+else:
+    print("Missing term is ",(sums-sums_new))
+
+
+LARGEST AND SMALLEST
+n=input("Enter number of elements")
+arr=[]
+for x in range(int(n)):
+    inp=input("Enter element ")
+    arr.append(int(inp))
+print("The list is ",arr)
+smallest=arr[0]
+largest=arr[1]
+for i in range(1,int(n)):
+    if (smallest>arr[i]):
+        smallest=arr[i]
+    if (largest<arr[i]):
+        largest=arr[i]
+print("Largest is: ",largest)
+print("Smallest is: ",smallest)
